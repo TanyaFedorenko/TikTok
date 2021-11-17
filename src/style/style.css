@@ -1,0 +1,153 @@
+
+body{
+    background: rgb(233,220,246);
+    background: radial-gradient(circle, rgba(233,220,246,0.3) 36%, rgba(250,231,240,.2) 100%);
+    
+}
+.container{
+    max-width:1200px ;
+    margin: 0 auto;
+}
+.header{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+    width: 100%;
+    
+
+}
+.header-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header-input{
+    margin-right: 30px;
+    min-width: 500px;
+    padding: 10px;
+    border-radius: 25px;
+    border: 2px solid #d1b5f1;
+    background-color:rgba(209,181,241,0.3) ;
+}
+.header-btn{
+    background-color: #d1b5f1;
+    border: 0;
+    border-radius: 25px;
+    padding: 8px 15px;
+    color: #fff;
+    transition: all 0.3s ease-in;
+    font-size: 16px;
+}
+.header-btn:hover{
+
+    box-shadow: 0px 1px 5px #555;
+}
+@media screen and (max-width:700px){
+    .header-container{
+        flex-wrap: wrap;  
+          text-align: center;
+    }
+    .logo{
+        margin-bottom: 20px;
+    }
+    .header-input{
+        margin:  20px;
+    }
+}
+@media screen and (max-width:580px){
+    .header-container{
+        flex-wrap: wrap;  
+          text-align: center;
+    }
+    form{
+        width: 100%;
+    }
+    .header-input{
+      
+        min-width: 85%;
+    }
+}
+.card{
+    background:#fff;
+    padding: 20px;
+    max-width: 300px;
+    margin: 40px auto;
+    border: 1px solid #d1b5f1 ;
+    border-radius:25px
+}
+.card-autor-img{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+}
+.card-autor{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.card-name{
+    margin-left: 15px;
+}
+.card-likes{
+    display: flex;
+    justify-content: end;
+
+}
+.card-likes img{
+    width: 30px;
+    height: 30px;
+}
+.card-comment{
+    margin-left: 20px;
+}
+
+@media screen and (max-width:400px){
+  .card{
+      padding: 20px 10px;
+  }  
+}
+.hide{
+    display:none;
+}
+/*----user-*/
+.user-block{
+    padding-bottom: 50px;
+}
+.user-block__main{
+    margin-bottom: 20px;
+}
+.user-block__main img{
+    width: 116px;
+    height:116px;
+    border-radius:100%;
+}
+.user-block__name{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    padding-bottom: 4px;
+    padding-left: 20px;
+
+}
+.user-block__container{
+    width: 50%;
+    margin: 0 auto;
+}
+.user-block__activities strong{
+    font-size: 18px;
+}
+.user-block__info{
+    margin-bottom: 30px;
+    text-align: center;
+}
+.activ:not(:last-child){
+    padding-right: 15px;
+}
+.user-block__videos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.user-block-video{
+    margin: 5px;
+}
